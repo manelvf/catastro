@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Visor de Catastro</title>
+    <style>
+      table#controlTable tr td {text-align:center;font-size:1.5em;font-weight:strong;cursor:pointer;
+        background-color:lightblue;
+        border:1px solid gray;}
+      div#box {text-align:center;}
+
+      table#board tr td {width:28px;height:20px;background-color:transparent;border:1px solid black;}
+
+    </style>
+  </head>
+  <body>
+
+    <div id="loading" style="float:left;z-index:1000;position:absolute;visibility:hidden;">
+      Loading...
+    </div>
+    <img id="image" src="#" width="1754" height="1240" alt="Imaxe principal" />
+    <div id="box" style="float:left;border:1px solid gray;position:absolute;top:100px;left:200px;z-index:1000;background-color:lightyellow;" >
+
+      <div id="tupe" style="width:380px;height:24px;background-color:orange;text-align:right;">
+        <span style="font-weight:strong;font-size:1.5em;">-</span>&nbsp;
+      </div>
+
+      
+      <div id="boxControls" style="width:380;height:260;">
+        <table id="board" cellspacing="0" cellpading="0" style="border-collapse:collapse;float:right;background:url(http://i.imgur.com/0IsLk.jpg);">
+        </table>
+
+        <table id="controlTable" >
+          <tr>
+            <td colspan="3">&uarr;</td>
+          </tr>
+          <tr>
+            <td >&larr;</td><td>&nbsp;</td><td>&rarr;</td>
+          </tr>
+          <tr>
+            <td colspan="3">&darr;</td>
+          </tr>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td >+</td><td></td><td>-</td>
+          </tr>
+          <tr>
+            <td class="inception" colspan="3">ORIXE</td>
+          </tr>
+        </table>
+      </div>
+     
+    </div>
+    <script src="jquery-1.7.1.min.js" ></script>
+    <script src="main.js" ></script>
+  </body>
+</html>
+
